@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+if (defined('RUNNING_FROM_ROOT')) {
+    $this->plugin('basePath')->setBasePath($this->basePath().'/public');
+   // die($this->basePath());
+}
+?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
