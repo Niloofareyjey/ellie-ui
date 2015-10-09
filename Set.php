@@ -18,7 +18,7 @@ class Set extends ViewModel{
 
         $renderer->setResolver($resolver);
         $map = new Resolver\TemplateMapResolver(array(
-            static::getTemplate()      => __DIR__ . '/../../../view/' . static::getTemplate() . '.phtml',
+            static::getTemplate()      => __DIR__ . '/view/' . static::getTemplate() . '.phtml',
         ));
 
         $resolver->attach($map) ;   // this will be consulted first

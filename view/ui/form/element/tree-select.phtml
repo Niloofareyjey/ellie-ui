@@ -1,6 +1,5 @@
 <?php
 //$this->headScript()->appendFile( '/assets/layout/js/jquery.nanoscroller/jquery.nanoscroller.js');
-
 ?>
 
 
@@ -24,53 +23,7 @@
         <?php endforeach;?>
     </ul>
 <?php endif;?>
-<!--<ul class="nav nav-list treeview">-->
-<!--    <li class=""><label class="tree-toggler nav-header"><i class="fa fa-folder-o"></i> General</label>-->
-<!--        <ul class="nav nav-list tree" style="display: none;">-->
-<!--            <li><a href="#">Link</a></li>-->
-<!--            <li><a href="#">Link</a></li>-->
-<!--            <li><label class="tree-toggler nav-header"><i class="fa fa-folder-o"></i> Structure</label>-->
-<!--                <ul class="nav nav-list tree">-->
-<!--                    <li><a href="#">Link</a></li>-->
-<!--                    <li><a href="#">Link</a></li>-->
-<!--                    <li><label class="tree-toggler nav-header"><i class="fa fa-folder-o"></i> Plugins</label>-->
-<!--                        <ul class="nav nav-list tree">-->
-<!--                            <li><a href="#">Link</a></li>-->
-<!--                            <li><a href="#">Link</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </li>-->
-<!--    <li><label class="tree-toggler nav-header"><i class="fa fa-folder-o"></i> Documentation</label>-->
-<!--        <ul class="nav nav-list tree">-->
-<!--            <li><a href="#">Link</a></li>-->
-<!--            <li><a href="#">Link</a></li>-->
-<!--            <li><label class="tree-toggler nav-header"><i class="fa fa-folder-o"></i> Components</label>-->
-<!--                <ul class="nav nav-list tree">-->
-<!--                    <li><a href="#">Link</a></li>-->
-<!--                    <li><a href="#">Link</a></li>-->
-<!--                    <li><label class="tree-toggler nav-header"><i class="fa fa-folder-o"></i> Speech API</label>-->
-<!--                        <ul class="nav nav-list tree">-->
-<!--                            <li><a href="#">Link</a></li>-->
-<!--                            <li><a href="#">Link</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </li>-->
-<!--            <li><label class="tree-toggler nav-header"><i class="fa fa-folder-o"></i> Charts</label>-->
-<!--                <ul class="nav nav-list tree">-->
-<!--                    <li><a href="#">Link</a></li>-->
-<!--                    <li><a href="#">Link</a></li>-->
-<!--                    <li><label class="tree-toggler nav-header"><i class="fa fa-folder-o"></i> Reports</label>-->
-<!--                        <ul class="nav nav-list tree">-->
-<!--                            <li><a href="#">Link</a></li>-->
-<!--                            <li><a href="#">Link</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </li>-->
-<!--</ul>-->
+
+<?php if (!isset($notFirst)):?>
+<input type="text" name="<?=$name?>" style="display: none;" value="16">
+<?php endif;?>
